@@ -1,7 +1,7 @@
 # Site
 name: "Behind the Back Office"
 title: "Behind the Back Office"
-description: "Personal blog based mainly on day-to-day experiences, tools and techniques"
+description: "Personal blog based on day-to-day experiences, tools and techniques on software testing and quality assurance"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: ''
