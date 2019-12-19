@@ -62,6 +62,12 @@ post_class: post-template
             {% endif %}
             <!-- End Featured Image -->
 
+            <!-- Image Credits -->
+            {% if page.imagecredit %}
+            <div align="right"> Photo by {{ page.imagecredit }}</div><br>
+            {% endif %}
+            <!-- End Image Credits -->
+
             <!-- Post Content -->
             <div class="article-post">
                 <!-- Toc if any -->
