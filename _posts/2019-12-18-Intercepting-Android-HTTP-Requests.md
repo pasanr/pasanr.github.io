@@ -62,3 +62,47 @@ $ java -jar burpsuite_community_vx.x.xx.jar
 You should see the Welcome page of Burp Suite. Choose a 'Temporary Project' and then start Burp.
 
 Once the Burp Suite is started, choose 'Proxy' tab appearing under menu bar.
+
+<p align="center">
+  <img src="/assets/images/20191218/burp_proxy1.png">
+</p>
+
+Then you have to setup a proxy. For that, go to 'Options' tab in Proxy window. Under Binding, choose a binding port, such as 8989. Then for the address, choose a specific address option. In the drop down list, it should show the network interface address for your WiFi hotspot. We have to choose that from the drop down. You may choose 'All interfaces' as well, if you are unclear. But you need this IP address later anyway, so better to find it right now. Click OK to save and close the add new listener dialog.
+
+<p align="center">
+  <img src="/assets/images/20191218/new_proxy.png">
+</p>
+
+Then the new proxy should appear in the box. Choose to run only the new proxy that we just created in ‘Running’ check box by un-checking the rest.
+
+<p align="center">
+  <img src="/assets/images/20191218/proxy_list.png">
+</p>
+
+Now you are ready to receive the requests from host side. Check whether interception is turned on in ‘intercept’ tab.
+
+<p align="center">
+  <img src="/assets/images/20191218/intercept_on.png">
+</p>
+
+To verify the proxy is running, send a request to your configured port from your browser. You should see a page similar to below:
+
+<p align="center">
+  <img src="/assets/images/20191218/proxy_running.png">
+</p>
+
+Then you have to configure your Android device to use this proxy. Go to your WiFi connection settings and choose ‘Advanced’.
+
+<p align="center">
+  <img src="/assets/images/20191218/wifi_setting.jpg">
+</p>
+
+Choose ‘Proxy’ to Manual and insert IP address of WiFi hotspot network interface, in which Burp Proxy is running, as the ‘Proxy host name’. Set the port as configured earlier (8989 in our case).
+
+<p align="center">
+  <img src="/assets/images/20191218/advanced_settings.JPEG">
+</p>
+
+That’s all. You have to save the configurations. Now the requests from your application should go through Burp Proxy. You can verify it by sending a request to a known site using a web browser in your Android device.
+
+When a request is received by Burp Proxy from the device, it will be visible under ‘Intercept’ tab. You can edit the request if needed, and click on ‘Forward’ button to allow sending it to the server. If you want, you can drop the packet as well, so that server will not receive the request at all.
