@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Mediumish Template for Jekyll
+title: Behind the Back Office
 permalink: /about
 comments: true
 ---
@@ -8,19 +8,26 @@ comments: true
 <div class="row justify-content-between">
 <div class="col-md-8 pr-5">
 
-<p>This website is built with Jekyll and Mediumish template for Jekyll. It's for demonstration purposes, no real content can be found. Mediumish template for Jekyll is compatible with Github pages, in fact even this demo is created with Github Pages and hosted with Github.</p>
+<p>This is a personal blog written to share day to day experiences in using tools and techniques related to software engineering and testing. Most of the blogs are focused on Linux and Android related tools.</p>
 
-<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/mediumish-jekyll-template.png" alt="jekyll template mediumish" /></p>
-<h4>Documentation</h4>
+<br>
+<h4>About Author</h4>
 
-<p>Please, read the docs <a href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/">here</a>.</p>
+<p>I'm Pasan Rathnasiri, who is currently working as a software engineer (Quality Assurance). My interests include software testing, networking and information security.</p>
+
+<br>
+<hr>
+
+<p>
+This blog is powered by Jekyll and Mediumish template for Jekyll.</p>
 
 <h4>Questions or bug reports?</h4>
 
-<p>Head over to our <a href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Github repository</a>!</p>
+<p>Head over to <a href="https://github.com/pasanr">Github repository</a>!</p>
 
 </div>
 
+<!--
 <div class="col-md-4">
 
 <div class="sticky-top sticky-top-80">
@@ -32,4 +39,5 @@ comments: true
 
 </div>
 </div>
+-->
 </div>
