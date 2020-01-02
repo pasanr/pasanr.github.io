@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Intercepting Android HTTP Requests"
+title:  "Intercepting Android HTTP Traffic"
 author: pasan
 categories: [ Android, Wireshark, BurpSuite, Packet Sniffing, tutorial ]
 tags: [Android, Wireshark, BurpSuite, PacketSniffing]
